@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Type Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .button {
+            font-size: 24px;
+            padding: 20px 40px;
+            margin: 60px;
+            cursor: pointer;
+            border: none;
+            background-color: #007BFF;
+            color: #fff;
+            border-radius: 12px;
+            text-transform: uppercase;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select User Type</h1>
+    <button class="button" onclick="redirectToAdminPage()">Admin</button>
+    <button class="button" onclick="redirectToStudentPage()">Student</button>
+
+    <script>
+        function redirectToAdminPage() {
+            // Replace 'admin.html' with the actual URL of your admin page.
+            window.location.href = 'admin_login.html';
+        }
+
+        function redirectToStudentPage() {
+            // Replace 'student.html' with the actual URL of your student page.
+            window.location.href = 'student_login.html';
+        }
+    </script>
+</body>
+</html>
+
+<style>
+    html {
+  background-color: #10151B;
+  background: url(images/laundrygif.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:bold;
+        text-align: center;
+        
+    }
+    h1{
+        font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #000000, #626071);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;    
+        }
+    .button {
+        font-size: 30px;
+        padding: 50px 50px 50px 50px;
+        font-weight: 300px;
+        cursor: pointer;
+        border: none;
+        background-image: linear-gradient(to left, #545456, #0d0d0d);
+        color: #fff;
+        border-radius: 180px;
+        text-transform: uppercase;
+        width: 300px; 
+        height: 300px;
+    }
+    .button:hover {
+        background-color: #323635;
+    }
+</style>

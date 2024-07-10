@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order History</title>
+</head>
+<body>
+  <header>
+    <h1>Order History</h1>
+  </header>
+  <div class="container go-back">
+    <a href="admin.html" class="back-button"></a>
+</div>
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Customer</th>
+          <th>Service Type</th>
+          <th>Weight(in kgs)</th>
+          <th>Amount Payable</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1/09/2023</td>
+          <td>John Doe</td>
+          <td>Washing</td>
+          <td>1</td>
+          <td>INR 55</td>
+        </tr>
+        <tr>
+          <td>2/09/2023</td>
+          <td>Jane Doe</td>
+          <td>Washing</td>
+          <td>2</td>
+          <td>INR 110</td>
+        </tr>
+        <tr>
+          <td>3/09/2023</td>
+          <td>Jake Smith</td>
+          <td>Washing</td>
+          <td>1.5</td>
+          <td>INR 82.5</td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
+
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #AAB8B6;
+    }
+
+    header {
+      background-color: #525a59;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+      margin-top: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    /*Back to home page button*/
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 40px;
+      height: 40px;
+      background-image: url('images/back-button.png'); /* Update with your image path */
+      background-color: transparent;
+      background-size: cover;
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+
+    .back-button:hover {
+      opacity: 0.8;
+    }
+  </style>
